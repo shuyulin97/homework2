@@ -93,6 +93,8 @@ studentRecord
 ### 1.2
 請將"一年級"，"二年級"，"三年級"，"四年級"改成"一"，"二"，"三"，"四"。（hint: 改掉studentRecord[[4]]的元素名稱。）（此題最後一行請輸入studentRecord，老師改題時會看studentRecord的names有沒有正確更改。）
 ```{r ans12}
+names(studentRecord[[4]]) <- c("一", "二", "三", "四")
+studentRecord
 ```
 
 
@@ -116,12 +118,17 @@ commitCheck <- fromJSON(commitCheck, simplifyVector = F)
 ### 2.1
 請取出commitCheck第8個元素底下的**commit**元素，再拿出它底下的**committer**元素，再拿出它底下的**date**元素的第一個值，存成commit8Date答案物件（為character class) 。（最後一行最忘了打答案物件）
 ```{r ans21}
+commit8Date <- commitCheck[[8]][["commit"]][["committer"]][["date"]]
+class(commit8Date)
+commit8Date
 ```
 
 
 ### 2.2
 commit8Date的日期時間為UTC時間，請將它轉成台灣時間的date time class並存在答案物件commit8TWDate。（最後一行最忘了打答案物件）
 ```{r ans22}
+commit8Date <- ymd_hms(commit8Date, tz="Asia/Taipei")
+commit8Date
 ```
 
 ### 2.3

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556090957807.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B05EB9D3",
+    "lastKnownWriteTime" : 3417510164014724456,
+    "last_content_update" : 1556090957807,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "e2311e66eaf648529c4f0ad7060a9606",
+        "name" : "commitCheck",
+        "title" : "commitCheck"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}
