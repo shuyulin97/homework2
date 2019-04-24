@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556078064355.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3084842852",
+    "id" : "3D5235D9",
+    "lastKnownWriteTime" : 1556078037,
+    "last_content_update" : 1556078331581,
+    "path" : "C:/Users/user/Desktop/R/homework2/homework2.Rmd",
+    "project_path" : "homework2.Rmd",
+    "properties" : {
+        "cursorPosition" : "88,26",
+        "scrollLine" : "69"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
