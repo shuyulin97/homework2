@@ -1,0 +1,9 @@
+"0","transcriptPartialData <- transcriptData[c(""學號"",""學分數"",""必選修類別（必∕選∕通）"")]"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","transcriptPartialData"
