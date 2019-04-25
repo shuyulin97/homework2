@@ -128,7 +128,7 @@ commit8Date
 commit8Date的日期時間為UTC時間，請將它轉成台灣時間的date time class並存在答案物件commit8TWDate。（最後一行最忘了打答案物件）
 ```{r ans22}
 library(lubridate)
-commit8Date <- with_tz( ymd_hms(commit8Date), tzone = "Asia/Taipei")
+commit8Date <- with_tz(ymd_hms(commit8Date), tzone = "Asia/Taipei")
 commit8Date
 ```
 
@@ -137,7 +137,13 @@ commit8Date
 ```{r ans23}
 names(commitCheck)
 length(commitCheck)
+char1 <- c("commit")
+char2 <- c(1:30)
+char3 <- str_c(char1,char2)
+names(commitCheck)[c(1:30)] <- char3
+commitCheck
 ```
+
 
 ### 2.4
 請先安裝**purrr**套件，接著執行以下程式得到allCommitDatesList這個物件，裡頭每個元素都是每一次commit的日期時間。
@@ -148,11 +154,17 @@ map(commitCheck,~.[[3]][[2]][[3]][[1]]) -> allCommitDatesList
 
 allCommitDatesList是個list，請使用`unlist()`函數將它轉成一個atomic vector其class為character，並存在allCommitDates答案物件。（最後一行最忘了打答案物件）
 ```{r ans24}
+allCommitDates <- unlist(allCommitDatesList)
+class(allCommitDatesList)
+allCommitDates
 ```
 
 ### 2.5 
 allCommitDates是UTC時區的時間文字字串，請將它轉成date time格式，再改成台灣時區後，存在allCommitDatesTW答案物件。（最後一行最忘了打答案物件）
 ```{r ans25}
+library(lubridate)
+allCommitDatesTW <- with_tz(ymd_hms(allCommitDates), tzone = "Asia/Taipei")
+allCommitDatesTW
 ```
 
 ### 2.6
