@@ -1,0 +1,4 @@
+"0","transcriptPartialDataEcon <- list(logicFromEcon & transcriptPartialData)"
+"2","Error in FUN(left, right) : 
+  operations are possible only for numeric, logical or complex types
+"
