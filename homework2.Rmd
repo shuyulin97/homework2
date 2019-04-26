@@ -128,8 +128,8 @@ commit8Date
 commit8Date的日期時間為UTC時間，請將它轉成台灣時間的date time class並存在答案物件commit8TWDate。（最後一行最忘了打答案物件）
 ```{r ans22}
 library(lubridate)
-commit8Date <- with_tz(ymd_hms(commit8Date), tzone = "Asia/Taipei")
-commit8Date
+commit8TWDate <- with_tz(ymd_hms(commit8Date), tzone = "Asia/Taipei")
+commit8TWDate
 ```
 
 ### 2.3
@@ -171,10 +171,8 @@ allCommitDatesTW
 使用`hour()`及`minute()`可分別將date time元素的「小時」及「分鐘」取出（其中小時是24小時制）。請創立一個logical vector答案物件logicWithinTimeFrame，各個元素值為TRUE時代表allCommitDatesTW的時間落在凌晨4點30到凌晨6點30之間（含起迄時點）。（最後一行最忘了打答案物件）
 ```{r ans26}
 x1 <- hour(allCommitDatesTW) == 4 & minute(allCommitDatesTW) >= 30
-x1
 x2 <- hour(allCommitDatesTW) == 5
 x3 <- hour(allCommitDatesTW) == 6 & minute(allCommitDatesTW) <= 30
-x3
 logicWithinTimeFrame <- x1 | x2 | x3
 logicWithinTimeFrame
 ```
