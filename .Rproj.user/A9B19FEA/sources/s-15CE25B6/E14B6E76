@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556244964601.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E14B6E76",
+    "lastKnownWriteTime" : 13229676095799408,
+    "last_content_update" : 1556244964601,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "a64ebfd8d1bd47e7994e996092117394",
+        "name" : "transcriptPartialDataEcon",
+        "title" : "transcriptPartialDataEcon"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}
